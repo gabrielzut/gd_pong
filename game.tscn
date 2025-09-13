@@ -1,0 +1,111 @@
+[gd_scene load_steps=8 format=3 uid="uid://c6yeti23yvjqn"]
+
+[ext_resource type="Script" uid="uid://b88moo30k8pi4" path="res://game.gd" id="1_7jktm"]
+[ext_resource type="Script" uid="uid://bofsnrp4a0iv" path="res://player_1.gd" id="1_80nbo"]
+[ext_resource type="Script" uid="uid://diykpfvhdyq0b" path="res://player_2.gd" id="4_fc0e3"]
+
+[sub_resource type="Gradient" id="Gradient_mwb40"]
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_80nbo"]
+gradient = SubResource("Gradient_mwb40")
+width = 1280
+height = 720
+
+[sub_resource type="Gradient" id="Gradient_80nbo"]
+offsets = PackedFloat32Array(1)
+colors = PackedColorArray(1, 1, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_e2o6t"]
+gradient = SubResource("Gradient_80nbo")
+width = 40
+height = 150
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_7jktm")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_80nbo")
+centered = false
+
+[node name="Player1" type="CharacterBody2D" parent="."]
+position = Vector2(50, 340)
+motion_mode = 1
+script = ExtResource("1_80nbo")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player1"]
+texture = SubResource("GradientTexture2D_e2o6t")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player1"]
+position = Vector2(-50, -340)
+polygon = PackedVector2Array(30, 265, 70, 265, 70, 415, 30, 415, 30, 335.585)
+
+[node name="Player2" type="CharacterBody2D" parent="."]
+position = Vector2(1230, 340)
+motion_mode = 1
+script = ExtResource("4_fc0e3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player2"]
+texture = SubResource("GradientTexture2D_e2o6t")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Player2"]
+position = Vector2(-50, -340)
+polygon = PackedVector2Array(30, 265, 70, 265, 70, 415, 30, 415, 30, 371.897)
+
+[node name="RestartMenu" type="ColorRect" parent="."]
+visible = false
+offset_left = 290.0
+offset_top = 135.0
+offset_right = 990.0
+offset_bottom = 585.0
+color = Color(0.226707, 0.226707, 0.226707, 1)
+
+[node name="RestartLabel" type="RichTextLabel" parent="RestartMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.006
+anchor_right = 1.0
+anchor_bottom = 0.404
+offset_left = -0.2
+offset_top = 1.0
+offset_right = 3.0
+offset_bottom = 0.199997
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 50
+text = "Dummy text"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RestartButton" type="MenuButton" parent="RestartMenu"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.261
+anchor_bottom = 0.171
+offset_left = 254.0
+offset_top = 310.0
+offset_right = 254.3
+offset_bottom = 310.05
+theme_override_font_sizes/font_size = 50
+text = "Restart"
+flat = false
+
+[node name="Player1ScoreLabel" type="RichTextLabel" parent="."]
+offset_left = 600.0
+offset_right = 647.0
+offset_bottom = 69.0
+theme_override_font_sizes/normal_font_size = 50
+text = "0"
+fit_content = true
+
+[node name="Player2ScoreLabel" type="RichTextLabel" parent="."]
+offset_left = 680.0
+offset_right = 727.0
+offset_bottom = 69.0
+theme_override_font_sizes/normal_font_size = 50
+text = "0"
+fit_content = true
+
+[connection signal="pressed" from="RestartMenu/RestartButton" to="." method="_on_restart_button_pressed"]

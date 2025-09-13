@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="128"
+   height="128"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="icon.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview6"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.8411365"
+     inkscape:cx="64.762817"
+     inkscape:cy="30.973521"
+     inkscape:window-width="1920"
+     inkscape:window-height="1007"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <rect
+     width="124"
+     height="124"
+     x="2"
+     y="2"
+     fill="#363d52"
+     stroke="#212532"
+     stroke-width="4"
+     rx="14"
+     id="rect1" />
+  <path
+     d="m 56.052204,28.617427 q 1.824,0 3.456,1.344 1.728,1.248 1.728,3.36 0,1.536 -1.056,3.072 l -39.072,50.784 -0.864,-0.576 h 35.136 q 2.016,0 3.36,1.248 1.44,1.248 1.44,3.36 0,1.92 -1.44,3.264 -1.344,1.344 -3.36,1.344 h -43.488 q -2.1119998,0 -3.6480001,-1.44 -1.44,-1.536 -1.44,-3.36 0,-1.536 1.152,-2.976 l 39.0720001,-50.784 0.768,0.576 h -32.544 q -2.016,0 -3.456,-1.248 -1.344,-1.344 -1.344,-3.456 0,-2.016 1.344,-3.264 1.44,-1.248 3.456,-1.248 z m 43.775934,0 q 5.088002,0 9.408002,2.784 4.32,2.688 6.912,7.392 2.592,4.704 2.592,10.56 0,5.856 -2.592,10.656 -2.592,4.704 -6.912,7.584 -4.32,2.784 -9.408002,2.784 H 81.300142 l 0.768,-1.536 v 22.08 q 0,2.112 -1.344,3.552 -1.248,1.344 -3.36,1.344 -2.016,0 -3.36,-1.344 -1.248,-1.44 -1.248,-3.552 v -57.408 q 0,-2.112 1.44,-3.456 1.44,-1.44 3.456,-1.44 z m 0,32.544 q 2.496002,0 4.512002,-1.632 2.112,-1.632 3.36,-4.32 1.344,-2.688 1.344,-5.856 0,-3.168 -1.344,-5.76 -1.248,-2.592 -3.36,-4.128 -2.016,-1.632 -4.512002,-1.632 H 81.108142 l 0.96,-1.44 v 26.016 l -0.864,-1.248 z"
+     id="text6"
+     style="font-weight:600;font-size:96px;line-height:1;font-family:Quicksand;-inkscape-font-specification:'Quicksand Semi-Bold';fill:#ffffff;stroke:#ffffff;stroke-width:0"
+     aria-label="ZP" />
+</svg>
